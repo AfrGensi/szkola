@@ -1,0 +1,57 @@
+body{
+    background: linear-gradient(to left, #c40c5c, #9401fd);
+    animation: tlo 5s ease 1s infinite alternate none;
+
+    .box:hover { animation-play-state:paused; }
+}
+@keyframes tlo
+{
+10%     { margin-left: 0; background: #9401fd }
+60%    { margin-right: 3%; background: #c40c5c }   
+100%    { margin-right: 3%; background: #690fcf }
+}
+
+h1{
+    padding: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    border: 5px solid rgb(151, 23, 44);
+    margin-right: 200px;
+    margin-left: 200px;
+    background-color: rgb(160, 26, 147);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    box-shadow: 5px 5px rgb(162, 127, 160);
+    color: white;
+    animation: animacja 5s ease 1s infinite alternate none;
+}
+
+.box:hover { animation-play-state:paused; }
+
+@keyframes animacja
+{
+10%     { margin-left: 0; background: rgb(70, 107, 144) }
+20%    { margin-right: 3%; background: rgb(157, 24, 117) }
+30%    { margin-left: 6%; background: rgb(139, 60, 29) }
+50%    { margin-right: 10%; background: rgb(93, 70, 130) }
+70%    { margin-left: 15%; background: rgb(157, 88, 122) }
+100%    { margin-right: 20%; background: rgb(104, 72, 102) }
+}
+#przedmiot {
+    margin-top: 50px;
+    transform: rotate(+4deg);
+}
+
+#rok {
+    margin-top: 70px;
+    transform: rotate(-4deg);
+}
+
+#prowadzacy {
+    margin-top: 90px;
+    transform: rotate(+4deg);
+}
+
+#imie{
+    margin-top: 100px;
+    transform: rotate(-4deg);
+}
