@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Powrót ze studniówki (ankietka) - Baj</title>
+    <link rel="stylesheet" href="cssnaankiete.css">
+</head>
+<body>
+    <form id="formularz">
+        <label for="imie">Imię</label>
+        <input type="text" id="imie" name="imie" placeholder="Imię" required><br>
+
+<label for="nazwisko">Nazwisko</label>
+<input type="text" id="nazwisko" name="nazwisko" placeholder="Nazwisko" required><br>
+
+<label for="data">Data (rok-miesiąc-dzień):</label>
+<input type="text" id="data" name="data" placeholder="rok-miesiąc-dzień" onchange="sprawdzDate(this)" required><br>
+
+        <label for="trzezwy">Stan trzeźwości:</label>
+        <select id="trzezwy" name="trzezwy" required>
+            <option value="nie1">Nie będe trzeźwy</option>
+            <option value="nie2">Definitywnie nie będę trzeźwy</option>
+            <option value="nie3">Na 100% nie będę trzeźwy</option>
+            <option value="nie4">Totalnie nie będę trzeźwy</option>
+            <option value="nie5">Lubie chłopców (Będę trzeźwy)</option>
+        </select><br>
+
+        <label for="siedzenie">Gdzie chcesz siedzieć:</label>
+        <select id="siedzenie" name="siedzenie" required>
+    <option value="">Gdzie chcesz siedzieć?</option>
+    <option value="1">Rząd 1 miejsce przy oknie</option>
+    <option value="2">Rząd 1 miejsce od przejścia</option>
+    <option value="3">Rząd 2 miejsce przy oknie</option>
+    <option value="4">Rząd 2 miejsce od przejścia</option>
+    <option value="5">Rząd 3 miejsce przy oknie</option>
+    <option value="6">Rząd 3 miejsce od przejścia</option>
+    <option value="7">Rząd 4 miejsce przy oknie</option>
+    <option value="8">Rząd 4 miejsce od przejścia</option>
+    <option value="9">Rząd 5 miejsce przy oknie</option>
+    <option value="10">Rząd 5 miejsce od przejścia</option>
+    <option value="11">Rząd 6 miejsce przy oknie</option>
+    <option value="12">Rząd 6 miejsce od przejścia</option>
+    <option value="13">Rząd 7 miejsce przy oknie</option>
+    <option value="14">Rząd 7 miejsce od przejścia</option>
+    <option value="15">Rząd 8 miejsce przy oknie</option>
+    <option value="16">Rząd 8 miejsce od przejścia</option>
+    <option value="17">Rząd 9 miejsce przy oknie</option>
+    <option value="18">Rząd 9 miejsce od przejścia</option>
+    <option value="19">Rząd 10 miejsce przy oknie</option>
+    <option value="20">Rząd 10 miejsce od przejścia</option>
+    <option value="21">Rząd 11 miejsce przy oknie</option>
+    <option value="22">Rząd 11 miejsce od przejścia</option>
+    <option value="21">Rząd 12 miejsce przy oknie</option>
+    <option value="22">Rząd 12 miejsce od przejścia</option>
+        </select>
+
+        <label for="zgoda" id="zgoda-text">Czy zgadzasz się na przetwarzanie danych osobowych?</label>
+        <input type="checkbox" id="zgoda" name="zgoda" required>
+
+        <input type="reset" value="Wyczyść" id="reset"> 
+        <input type="submit" id="submit" value="Rezerwuj" onclick="wyswietlAlert()">
+    </form>
+
+    <script>
+      function wyswietlAlert() {
+          alert("Miejsce zostało zarezerwowane!");
+      }
+  </script>
+</body>
+
+</html>
